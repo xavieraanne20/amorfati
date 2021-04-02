@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Amor Fati Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+	html,body {
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+		font-family: 'Montserrat';
+		font-size: 13px;
+	}	
+	
+	.fakeimg {
+		width: 100%;
+		height: auto;
+		padding-bottom: 2em;
+	}
+	  
+	.carousel-inner img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	ul {
+		text-align: center;
+	}
+	
+	.centered-text {
+	    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 30%; 
+		color: white;
+		font-family: Playfair Display;
+		font-size:7vw;
+		letter-spacing: 5px;
+		font-weight: bold;
+		line-height: 1.25em;
+	}
+	
+	.centered-p {
+	    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 40%; 
+        width: 60%;
+		color: white;
+		margin-top: 7em;
+		font-size: 2vw;
+		font-weight: bold;
+	}
+	
+	nav .navbar-nav li a{
+		color: white;
+		letter-spacing: 3px;
+		margin-left: 1.5em;
+		margin-right: 1.5em;	
+	}
+	
+	nav .navbar-nav li a:hover{
+		color: #FFDF00 !important;
+	}
+	
+	.heading {
+		padding-top: 2em;
+		padding-bottom: 0em;
+		text-align: center;
+		font-family: Playfair Display !important;	
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-size: 30px;
+	}
+
+	.heading-line {
+		width: 10%;
+		height:2px;
+		border-width:0;
+		color:gray;
+		background-color:gray;
+		margin-bottom: 3em !important;
+	}
+
+	#testi {
+		background-image: url("images/qm.png");
+		height: auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 3em;
+	}
+
+	#footer {
+		background-color: #343a40;
+	}
+	
+	.footer-content {
+		color: white ;
+	}
+
+
+	.footer-line {
+		width: 10%;
+		height:2px;
+		border-width:0;
+		background-color:white;
+		margin-bottom: 3em !important;
+	}
+
+	.copyright {
+		font-size: 9px;
+	}
+	
+	.card{
+		border-radius: 30px;
+		box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+		transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+		cursor: pointer;
+	}
+	
+	.card:hover{
+		transform: scale(1.05);
+		box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+	}
+	
+	.menu-list {
+		margin-top: 2em;
+	}
+	
+	.price {
+		font-weight: bold;
+		padding-left: 2em;
+		font-size: 15px;
+	}
+	
+	#last-item {
+		margin-bottom: 3em;
+	}
+	
+	@media only screen and (min-width: 768px) { 
+		#collapsibleNavbar {
+			display: flex !important;
+			justify-content: flex-end;
+		}
+	}
+		
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark" >
+	<!-- Brand/logo -->
+	  <a class="navbar-brand" href="index.html">
+		<img src="images/logo-af.png" alt="logo" style="width:80px;">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="text-align:center;">
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">HOME</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="menu.html">MENU</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="contact.html">CONTACT</a>
+		  </li>  
+		</ul>
+	  </div>  
+	</nav>
+
+	
+	<!-- Bestsellers -->
+	<div class="container">
+	  <h2 class="heading">Starters</h2>
+	  <hr class="heading-line">
+	  <div class="row menu-list">	
+		<div class="col-sm-4">
+		  <h4>Crispy Zucchini Fritté <span class="price">$12</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit, esse cillum, dolore eu fugiat nulla. (1700 cal)</i>
+		  <br><br>
+		  <h4>Italian Meatballs <span class="price">$15</p></h4>
+		  <i> Marinara Sauce & Garlic Bread (1460 cal)</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Prince Edward Island Steamed Mussels <span class="price">$18</p></h4>
+		  <i> uscan Style (1150 cal) or Diavolo Style (1080 cal)</i>
+		   <br><br>
+		  <h4>Bombalina  <span class="price">$13</p></h4>
+		  <i> Aliquam ultrices sagittis orci a (1000 cal)</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Italian Sausage Flatbread <span class="price">$10</p></h4>
+		  <i> Aliquet eget sit amet, cras adipiscing, enim (500 cal) </i>
+		  <br><br>
+		  <h4>Stuffed Mushrooms <span class="price">$13</p></h4>
+		  <i> Odio euismod lacinia (450 cal)</i>
+		</div>
+	  </div>
+	</div>
+	
+	 <div class="container">
+	  <h2 class="heading">Salads</h2>
+	  <hr class="heading-line">
+	 <div class="row menu-list">	
+		<div class="col-sm-4">
+		  <h4>Chopped Salad <span class="price">$10</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit, esse cillum, dolore eu fugiat nulla. (170 cal)</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Italian Tossed Salad <span class="price">$10</p></h4>
+		  <i> Iceberg, Arugula, Kalamata Olives, Red Onions, Pepperoncini, Garlic Croutons, Italian Vinaigrette (170 cal)</i>
+		   <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Caesar Salad <span class="price">$15</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit (460 cal)</i>
+		  <br><br>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container">
+	  <h2 class="heading">Entrée</h2>
+	  <hr class="heading-line">
+	  <div class="row menu-list">	
+		<div class="col-sm-4">
+		  <h4>Rigatoni Arrabbiata <span class="price">$42</p></h4>
+		  <i> Grilled Chicken, Spinach, Spicy Tomato Cream Sauce (1250 cal)</i>
+		  <br><br>
+		  <h4>Chicken & Spinach Manicotti <span class="price">$25</p></h4>
+		  <i> Italian Cheese Blend & Alfredo Sauce (1020 cal)</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Eggplant Parmesan<span class="price">$38</p></h4>
+		  <i> Mozzarella, Tomato Ragu with Spaghetti Aglio Olio (980 cal)</i>
+		   <br><br>
+		  <h4>Taylor Street Baked Ziti  <span class="price">$33</p></h4>
+		  <i> Italian Sausage, Pomodoro Sauce, Italian Cheese Blend (1400 cal)</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Salmon with Crispy Calabrian Shrimp<span class="price">$20</p></h4>
+		  <i> Four-Pepper Relish, Garlic Mashed Potatoes, Sauteed Spinach (1520 cal) </i>
+		  <br><br>
+		  <h4>Beef Tenderloin Medallions <span class="price">$43</p></h4>
+		  <i> Portabella Mushrooms, Balsamic Cream Sauce, Garlic Mashed Potatoes, Crispy Onion Strings. 5 oz. medallions (770 cal), 11 oz. Medallions (960 cal)</i>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container">
+	  <h2 class="heading">Dessert</h2>
+	  <hr class="heading-line">
+	  <div class="row menu-list">	
+		<div class="col-sm-4">
+		  <h4>Strawberry Gelato <span class="price">$10</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit (700 cal)</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Sweet Corn Panna Cotta with Fresh Blueberry Compote<span class="price">$12</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit (570 cal)</i>
+		   <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Almond Cake with Pears and Crème Anglaise<span class="price">$15</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit (800 cal)</i>
+		  <br><br>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container">
+	  <h2 class="heading">Wine</h2>
+	  <hr class="heading-line">
+	  <div class="row menu-list" id="last-item">	
+		<div class="col-sm-4">
+		  <h4>Barolo & Barbaresco <span class="price">$15</p></h4>
+		  <i> Duis aute irure dolor in reprehenderit in voluptate velit, esse cillum, dolore eu fugiat nulla</i>
+		  <br><br>
+		  <h4> Brunello<span class="price">$15</p></h4>
+		  <i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Amarone <span class="price">$20</p></h4>
+		  <i> Et egestas quis ipsum suspendisse ultrices gravida dictum fusce.</i>
+		   <br><br>
+		  <h4>Rosso di Montalcino  <span class="price">$21</p></h4>
+		  <i> Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam</i>
+		  <br><br>
+		</div>
+		<div class="col-sm-4">
+		  <h4>Dolcetto d'Alba <span class="price">$20</p></h4>
+		  <i> Bibendum arcu vitae elementum curabitur vitae nunc </i>
+		  <br><br>
+		  <h4>Lambrusco<span class="price">$23</p></h4>
+		  <i> Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam</i>
+		</div>
+	  </div>
+	</div>
+
+
+
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+	  <div class="footer-content">
+		<p>MEAL HOURS: MONDAY ~ SATURDAY 10AM ~ 10PM </p>
+		<p>342 MCKINLEY WEST, TAGUIG CITY</p>
+		<p>support@amorfati.com</p>
+		<p> (909) 981-1770</p>
+		<hr class="footer-line">
+		<p class="copyright">Copyright 2021 Amor Fati. All rights reserved.</p>
+	  </div>
+	</div>
+
+</body>
+</html>

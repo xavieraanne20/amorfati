@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Amor Fati Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <script>
+      function initMap() {
+        const mckinley = { lat: 14.5371618, lng: 121.0555822};
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 20,
+          center: mckinley,
+        });
+
+        const marker = new google.maps.Marker({
+          position: mckinley,
+          map: map,
+        });
+      }
+    </script>
+<style>
+	html,body {
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+
+
+		font-family: 'Montserrat';
+		font-size: 13px;
+	}	
+	
+	.fakeimg {
+		width: 100%;
+		height: auto;
+		padding-bottom: 2em;
+	}
+	  
+	.carousel-inner img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	ul {
+		text-align: center;
+	}
+	
+	.centered-text {
+	    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 30%; 
+		color: white;
+		font-family: Playfair Display;
+		font-size:7vw;
+		letter-spacing: 5px;
+		font-weight: bold;
+		line-height: 1.25em;
+	}
+	
+	.centered-p {
+	    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 40%; 
+        width: 60%;
+		color: white;
+		margin-top: 7em;
+		font-size: 2vw;
+		font-weight: bold;
+	}
+	
+	nav .navbar-nav li a{
+		color: white;
+		letter-spacing: 3px;
+		margin-left: 1.5em;
+		margin-right: 1.5em;	
+	}
+	
+	nav .navbar-nav li a:hover{
+		color: #FFDF00 !important;
+	}
+	
+	.heading {
+		padding-top: 2em;
+		padding-bottom: 0em;
+		text-align: left;
+		font-family: Playfair Display !important;	
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-size: 30px;
+	}
+
+	.heading-line {
+		width: 10%;
+		height:2px;
+		border-width:0;
+		color:gray;
+		background-color:gray;
+		margin-bottom: 3em !important;
+	}
+
+	#footer {
+		background-color: #343a40;
+	}
+	
+	.footer-content {
+		color: white ;
+	}
+
+	.footer-line {
+		width: 10%;
+		height:2px;
+		border-width:0;
+		background-color:white;
+		margin-bottom: 3em !important;
+	}
+
+	.copyright {
+		font-size: 9px;
+	}
+	
+	#map {
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:relative;
+		overflow:hidden;
+		padding-bottom:56.25%;
+		background-color:gray;
+	}
+	
+	#location-stamp {
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+	
+	input[type=text] {
+	  width: 100%;
+	  padding: 12px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	  border-radius: 10px;
+	}
+
+	input[type=submit] {
+	  width: 50%;
+	  padding: 12px;
+	  margin-top: 10px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	  border-radius: 10px;
+	  margin-left: 0px;
+	}
+
+	input[type=submit] {
+	  background-color: #807f7d;
+	  color: white;
+	  border: none;
+	}
+
+	input[type=submit]:hover {
+	  opacity: 0.8;
+	}
+	
+	#contact-us {
+		margin-bottom: 3em;
+	}
+	
+	#message {
+		padding-bottom: 50px;
+	}
+
+	@media only screen and (min-width: 768px) { 
+		#collapsibleNavbar {
+			display: flex !important;
+			justify-content: flex-end;
+		}
+	}
+		
+  </style>
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark" >
+	<!-- Brand/logo -->
+	  <a class="navbar-brand" href="index.html">
+		<img src="images/logo-af.png" alt="logo" style="width:80px;">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="text-align:center;">
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">HOME</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="menu.html">MENU</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="contact.html">CONTACT</a>
+		  </li>  
+		</ul>
+	  </div>  
+	</nav>
+	
+	<div class="container">
+		<div class="col-sm-12" id="location-stamp">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2 class="heading">AMOR FATI VINTAGE RESTAURANT</h2>
+					<p>MEAL HOURS: MONDAY ~ SATURDAY 10AM ~ 10PM </p>
+					<p>342 MCKINLEY WEST, TAGUIG CITY</p>
+					<p>support@amorfati.com</p>
+					<p> (909) 981-1770</p>
+				</div>
+				<div class="col-sm-6" >
+					<div id="map"></div>
+					<script
+					  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL4L1GngYbar7V-G-w-BfCBsf250RcWB8&callback=initMap&libraries=&v=weekly"
+					  async
+					></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="col-sm-12" id="contact-us">
+			<div class="col-sm-6">
+				<h2 class="heading">CONTACT US</h2>
+				<p>With any questions or concerns!</p>
+			</div>
+			<div class="col-sm-6" >
+				<form action="/action_page.php">
+					<input type="text" placeholder="Name" name="name" required>
+					<input type="text" placeholder="Email address" name="mail" required>
+					<input type="text" placeholder="Subject" name="subject" required>
+					<input id="message" type="text" placeholder="Message" name="mail" required>
+					<input id="send-button" type="submit" value="SEND">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+	  <div class="footer-content">
+		<p>MEAL HOURS: MONDAY ~ SATURDAY 10AM ~ 10PM </p>
+		<p>342 MCKINLEY WEST, TAGUIG CITY</p>
+		<p>support@amorfati.com</p>
+		<p> (909) 981-1770</p>
+		<hr class="footer-line">
+		<p class="copyright">Copyright 2021 Amor Fati. All rights reserved.</p>
+	  </div>
+	</div>
+
+</body>
+</html>
